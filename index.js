@@ -80,7 +80,7 @@ function modalEjercicio1() {
             console.log("reiniciar todo")            
         } else if (result.isDenied) {
           console.log("cerrar todo")
-          Swal.fire('esto cierra y te lleva a la card de inicio')
+          location.reload();
         }
       })
 
@@ -116,10 +116,25 @@ function modalEjercicio2() {
             console.log("reiniciar todo")            
         } else if (result.isDenied) {
           console.log("cerrar todo")
-          Swal.fire('esto cierra y te lleva a la card de inicio')
+          location.reload();
         }
       })
 }
+//==================================User hace click en comenzar juego
+let startButton = document.getElementById("start-button");
+let startScreen = document.querySelector(".start-screen");
+let displayContainer = document.getElementById("display-container");
 
+
+startButton.addEventListener("click", () => {
+    startScreen.classList.add("hide");
+    displayContainer.classList.remove("hide");
+    //reiniciar();
+  });
+  //Boton cancelar, esconde juego y deja card de inicio
+  window.onload = () => {
+    startScreen.classList.remove("hide");
+    //displayNuevo.classList.add("hide");
+  };
 
 
