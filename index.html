@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <link rel="stylesheet" href="sweet-modal/dist/min/jquery.sweet-modal.min.css" />
+    <script src="sweet-modal/dist/min/jquery.sweet-modal.min.js"></script> -->
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        
+    </script> -->
+
+    <title>this or that</title>
+</head>
+<body>
+    <!--
+        aca tiene que ir la tarjeta e inicio
+        cuando haces iniciar - entra el hide y saca el hidel a lo de abajo
+    -->
+
+    <div class="conteiner-principal">
+
+        <div class="conteiner-juego">
+            <div class="titulo-pregunta">
+                <h2>¿Cual preferis?</h2>
+            </div>
+            <div class="opciones">
+                <div class="opcion1" onclick="modalEjercicio1()">
+                    <img src="" 
+                    id="foto1"
+                    alt="imagen1">
+                    <h3 
+                    id="titulo1"
+                    class="nombre-foto-1"></h3>
+                </div>
+                
+                <div class="opcion2" onclick="modalEjercicio2()">
+                    <img src=""
+                    id="foto2" 
+                    alt="imagen2">
+                    <h3
+                    id="titulo2"
+                    class="nombre-foto-2">Opcion dinamica 2</h3>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+
+
+
+
+    
+
+
+
+
+    <!--
+        Cosas para hacer 
+        1. fotos de mismo tamaño para cada una
+        2. subirlas a imgbb y tengo los links para el json
+        3. videos en premiere, 20 segundos de algunos ejercicios
+        en el html
+        tarjeta de inicio, al hacer click entras a la app
+        .
+        tarjeta de las cosas 
+        un div titulo
+        otro div imagenes 
+    -->
+    <script src="index.js"></script>
+</body>
+</html>

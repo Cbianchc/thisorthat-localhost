@@ -1,0 +1,117 @@
+* {
+    transition: all 0.3s;
+  }
+body{
+    background: cadetblue;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: calibri;
+    font-size: 100%;    
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner-principal{
+    background-color: yellow;
+    width: 90vw;
+    height: 90vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+@media (max-width:600px){
+    .conteiner-principal{
+        height: auto;
+    }
+}
+/* .titulo-pregunta{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(166, 218, 253);
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    max-width: 800px;
+} */
+.conteiner-juego{
+    background-color: rgb(166, 218, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: max-content;
+    max-width: 800px;
+}
+@media (max-width: 600px){
+    .conteiner-juego{
+        height: auto;
+    }
+}
+
+.opciones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    width: 95%;
+    height: auto;
+}
+@media (max-width:600px){
+    .opciones{
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+    }
+
+}
+
+.opcion1{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px rgb(33, 32, 32);
+    margin: 10px 25px;
+    width: 80%;
+    height: auto;
+    padding: 5px;
+
+}
+.opcion1:hover{
+    background-color: rgb(219, 254, 219);
+    box-shadow: 1px 4px 5px rgb(33, 32, 32);
+}
+.opcion1 img{
+    width:100%;
+    height:100%;
+    object-fit: cover
+}
+
+.opcion2{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 8px 10px rgb(33, 32, 32);
+    margin: 10px 25px;
+    width: 80%;
+    height: auto;
+}
+.opcion2:hover{
+    background-color: rgb(219, 254, 219);
+    box-shadow: 1px 4px 5px rgb(33, 32, 32);
+}
+.opcion2 img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
