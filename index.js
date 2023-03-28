@@ -72,6 +72,7 @@ function modalEjercicio1() {
         confirmButtonText: 'Terminé! dame otro!',
         denyButtonText: `Cancelar todo`,
         allowOutsideClick: false,
+        width: 600,
             }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
@@ -108,6 +109,7 @@ function modalEjercicio2() {
         confirmButtonText: 'Terminé! dame otro!',
         denyButtonText: `Cancelar todo`,
         allowOutsideClick: false,
+        width: 700,
             }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
